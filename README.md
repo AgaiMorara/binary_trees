@@ -20,4 +20,3 @@ Modular implement
 	16.) Checks if a binary tree is perfect
 	17.) Finds the sibling of a node
 	18.) Finds the uncle of a node
-	19.) 
