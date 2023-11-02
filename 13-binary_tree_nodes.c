@@ -8,13 +8,13 @@
 
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
-	size_t stale = 0;
+	size_t fertile = 0;
 
 	if (!tree)
 		return (0);
-	stale += (tree->left || tree->right) ? 1 : 0;
-	stale += binary_tree_nodes(tree->left);
-	stale += binary_tree_nodes(tree->right);
+	fertile += (tree->left || tree->right) ? 1 : 0;
+	fertile += binary_tree_nodes(tree->left);
+	fertile += binary_tree_nodes(tree->right);
 
-	return (stale);
+	return (fertile);
 }
